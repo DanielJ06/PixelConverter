@@ -29,7 +29,7 @@ const Home: React.FC = () => {
           <h3>Pixel value:</h3>
           <input onChange={calcRem} type="number"/>
             <Result>
-              <h1>{rem} rem</h1>
+              <h1>{rem >= 0 ? rem : 0} rem</h1>
             </Result>
         </ConvertArea>
       </Content>
